@@ -1,0 +1,109 @@
+.products{
+    padding:10px 5px;
+    background-color: rgb(80, 119, 225);
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 20px 10px;
+}
+.product-page{
+    display: flex;
+    background-color: rgb(235, 232, 229);
+}
+.product-aside{
+    width: 20vw;
+    background-color: rgb(219, 194, 162);
+}
+.product-aside>.search{
+    align-items: center;
+    justify-content: center;
+}
+.product-aside>.filter{
+    margin-top: 10px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.product-aside>.filter>select{
+    width: 70%;
+    font-size: 20px;
+    font-weight: bold;
+    height: 30px;
+}
+
+.card{
+    padding-bottom: 10px;
+    background-color: rgb(243, 236, 236);
+    color: rgb(27, 24, 24);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgb(43,42, 42);
+}
+.card>img{
+    height: 250px;
+    width: 200px;
+}
+.card>.buttons{
+display: flex;
+gap: 20px;
+}
+.card>.buttons>button{
+    cursor: pointer;
+    font-size: 22px;
+    padding: 10px 20px ;
+    color: white;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 3px black;
+    border-radius: 10px;
+}
+.card>.buttons>button:first-child{
+    background-color: blue;
+}
+.card>.buttons>button:last-child{
+    background-color: rgb(23, 227, 64);
+}
+.card>.buttons>button:hover{
+      transition:  all 0.4s ease 0s;
+      opacity: 0.8;
+      transform: scale(1.1,1.1);
+} 
+@media  (min-width:0px) and (max-width:420px){
+    .products{
+        grid-template-columns: auto;
+
+    }
+    .card>img{
+        height: 80%;
+        width: 80%;
+    }
+    
+}
+@media  (min-width:421px) and (max-width:750px){
+    .products{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .card>img{
+        height: 80%;
+        width: 80%;
+    }
+    
+}
+@media  (min-width:751px) and (max-width:1200px){
+    .products{
+        grid-template-columns: repeat(3,1fr
+        );
+
+    }
+    .card>img{
+        height: 80%;
+        width: 80%;
+    }
+    
+}

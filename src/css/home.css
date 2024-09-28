@@ -1,0 +1,16 @@
+/* .first{
+    height: 80px;
+    width: 100px;
+} */
+ .first{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    
+ }
+.button:hover{
+    transition: all 0 0.5s ease 0s;
+    color: orangered !important;
+    text-decoration: underline;
+ }
